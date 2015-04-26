@@ -37,7 +37,23 @@ The following files are available for the train and test data. Their description
 5. Appropriately labels the data set with descriptive variable names. 
 6. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## run_analysis.R explained, step-by-step
+## Explanation of run_analysis.R execution step-by-step
 
-* Placeholder 1
-* Placeholder 2
+* Load the reshape2 package (to melt and cast data in the final step)
+* Read the files that contain labels and features (activity_labels.txt & features.txt)
+* Load the test data and test subject into memory (X_test.txt, y_test.txt, subject_test.txt)
+* Load the train data and train subject into memory (X_train.txt, y_train.txt, subject_train.txt)
+* Use the features to give column names to the train/test data
+* Column bind the subject/activities together
+* Column bind the merged subjects & activities with their associated data (train/test)
+* Row bind the train data with the test data
+* Search through all the column names for those containing std(), mean(), activity, or subject.
+* Save those columns that match into a new smaller dataset
+* Give descriptive activities names to name the activities in the data set by converting it to a factor and setting levels using activity_labels
+* Melt the dataset, keeping "subject" and "activity" as IDs
+* Cast the dataset into wide form and take the mean of all the variables
+* Save final data set to "tidy_data_averaged.txt" with rownames=FALSE 
+
+* 
+* 
+* 
