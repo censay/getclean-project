@@ -54,7 +54,8 @@ The following files are available for the train and test data. Their description
 13. Cast the dataset into wide form and take the mean of all the variables
 14. Save final data set to "tidy_data_averaged.txt" with rownames=FALSE 
 
-## Final dataset columns.  Values for each subject/activity represents an average
+## Final dataset columns with appropriate names and labels.  Values for each subject/activity represents an average
+````
 subject
 activity
 tBodyAcc-mean()-X
@@ -123,3 +124,4 @@ fBodyBodyGyroMag-mean()
 fBodyBodyGyroMag-std()
 fBodyBodyGyroJerkMag-mean()
 fBodyBodyGyroJerkMag-std()
+````
