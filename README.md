@@ -12,4 +12,7 @@ To run this code successfully, follow these steps:
 
 5. Make sure you have the "reshape2" package installed.  The R script will load the library for you.
 
-6. Run the script and a tidy data set called "tidy_data_averaged.txt" will be saved to your working directory.
+6. Run the script and a tidy data set called "tidy_data_averaged.txt" will be saved to your working directory.  This file reports the overall average for all means/standard deviations recorded by each subject's accelerometers during one of 6 activities (WALKING,
+ WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING
+, STANDING
+, LAYING)
